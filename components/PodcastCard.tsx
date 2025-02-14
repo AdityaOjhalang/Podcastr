@@ -8,7 +8,7 @@ const PodcastCard = ({
 }: { imgUrl: string, title: string, description: string, podcastId: number }) => {
 	return (
 		<div className='cursor-point'>
-			<figure className=' border-2 border-red-500 broderflex flex-col gap-2'>
+			<figure className=' broderflex flex-col gap-2'>
 				<Image
 					src={imgUrl}
 					width={174}
