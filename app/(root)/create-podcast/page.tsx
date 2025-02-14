@@ -135,16 +135,21 @@ const createPodcast = () => {
           </div>
           <div className="flex flex-col pt-10">
             <GeneratePodcast
-             setAudioStorageId={setAudioStorageId}
-             setAudio={setAudioUrl}
-             voiceType={voiceType!}
-             audio={audioUrl}
-             voicePrompt={voicePrompt}
-             setVoicePrompt={setVoicePrompt}
-             setAudioDuration={setAudioDuration}
+              setAudioStorageId={setAudioStorageId}
+              setAudio={setAudioUrl}
+              voiceType={voiceType!}
+              audio={audioUrl}
+              voicePrompt={voicePrompt}
+              setVoicePrompt={setVoicePrompt}
+              setAudioDuration={setAudioDuration}
             />
 
             <GenerateThumbnail
+              setImage={setImageUrl}
+              setImageStorageId={setImageStorageId}
+              image={imageUrl}
+              imagePrompt={imagePrompt}
+              setImagePrompt={setImagePrompt}
             />
 
             <div className="mt-10 w-full">
