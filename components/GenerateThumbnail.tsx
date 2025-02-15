@@ -45,7 +45,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
       })
     } catch (error) {
       console.log(error)
-      toast({ title: 'Error generating thumbnail', variant: 'destructive' })
+      
     }
   }
   // AI Generated Image
@@ -56,7 +56,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
       handleImage(blob, `thumbnail-${uuidv4()}`);
     } catch (error) {
       console.log(error)
-      toast({ title: 'Error generating thumbnail', variant: 'destructive' })
+      
     }
   }
   // Upload Image
@@ -73,7 +73,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
       handleImage(blob, file.name);
     } catch (error) {
       console.log(error)
-      toast({ title: 'Error uploading image', variant: 'destructive' })
+      
     }
   }
 
