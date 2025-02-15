@@ -18,10 +18,6 @@ With real-time collaboration, AI-enhanced sound generation, and seamless distrib
 - ✅ Invite team members to **edit, annotate, and manage** podcast episodes together.  
 - ✅ Live preview for quick iterations.  
 
-### 📂 Episode Management  
-- ✅ Organize your content into **series, seasons, and episodes**.  
-- ✅ **Drag & drop episode reordering** for better control.  
-
 ### 🔊 Multi-Format Support  
 - ✅ Supports **MP3, WAV, AAC, and FLAC** for uploads and exports.  
 - ✅ **Automated format conversion** for easy publishing.  
@@ -30,9 +26,6 @@ With real-time collaboration, AI-enhanced sound generation, and seamless distrib
 - ✅ No need to worry about storage; all data is stored **securely in the cloud**.  
 - ✅ **Multi-device support**—work on your podcast from anywhere.  
 
-### 📢 SEO-Optimized Publishing  
-- ✅ Automatic **metadata generation** for better discoverability.  
-- ✅ **One-click publishing** to Spotify, Apple Podcasts, and Google Podcasts.  
 
 ---
 
