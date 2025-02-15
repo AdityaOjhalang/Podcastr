@@ -101,10 +101,11 @@ const PodcastPlayer = () => {
     >
       {/* change the color for indicator inside the Progress component in ui folder */}
       <Progress
-        value={(currentTime / duration) * 100}
+        value={(currentTime / (duration || 1)) * 100} // Avoid division by zero
         className="w-full"
-        max={duration}
+        max={Math.max(1, duration)} // Ensure max is at least 1
       />
+
       <section className="glassmorphism-black flex h-[112px] w-full items-center justify-between px-4 max-md:justify-center max-md:gap-5 md:px-12">
         <audio
           ref={audioRef}
@@ -160,7 +161,7 @@ const PodcastPlayer = () => {
           </div>
         </div>
         <div className="flex items-center gap-6">
-         <h2 className="text-16 font-normal text-white-2 max-md:hidden">
+          <h2 className="text-16 font-normal text-white-2 max-md:hidden">
             {formatTime(duration)}
           </h2>
           <div className="flex w-full gap-2">
