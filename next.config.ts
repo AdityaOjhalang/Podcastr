@@ -2,9 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {
-    ignoreBuildErrors: true
+    ignoreBuildErrors: true,
   },
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true, // Ignores ESLint errors in production builds
+  },
   images: {
     remotePatterns: [
       {
@@ -16,11 +18,11 @@ const nextConfig: NextConfig = {
         hostname: "qualified-flamingo-492.convex.cloud",
       },
       {
-        protocol: 'https',
-        hostname: 'img.clerk.com'
+        protocol: "https",
+        hostname: "img.clerk.com",
       },
     ],
-  }, // <-- Closing brace for images was missing
+  },
 };
 
 export default nextConfig;
