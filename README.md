@@ -11,16 +11,13 @@ With real-time collaboration, AI-enhanced sound generation, and seamless distrib
 ## 🚀 Features  
 
 ### 🎧 AI-Powered Podcast Editing  
-- ✅ Automatically **remove background noise**, enhance audio clarity, and normalize volume.  
 - ✅ AI-based **speech-to-text transcription** for generating captions and show notes.  
+- ✅ Use **DALL·E AI** to create a **customized podcast thumbnail** automatically.  
+- ✅ Generate visually appealing cover art that aligns with your podcast theme.  
 
 ### 👥 Real-Time Collaboration  
 - ✅ Invite team members to **edit, annotate, and manage** podcast episodes together.  
 - ✅ Live preview for quick iterations.  
-
-### 🔊 Multi-Format Support  
-- ✅ Supports **MP3, WAV, AAC, and FLAC** for uploads and exports.  
-- ✅ **Automated format conversion** for easy publishing.  
 
 ### ☁️ Cloud-Based & Secure  
 - ✅ No need to worry about storage; all data is stored **securely in the cloud**.  
@@ -54,6 +51,10 @@ Discover and manage your podcasts in a modern, intuitive interface.
 ### 🎤 Create Podcast Page  
 Set up a new podcast with a guided step-by-step process.  
 ![Create Podcast Page](public/ReadmePhotos/create-podcast.png)  
+
+### 🎙️ Podcast Details Page  
+View details about a podcast and play episodes directly from the interface.  
+![Podcast Details](public/ReadmePhotos/podcast-details.png)  
 
 ### 🔎 Discover Page  
 Explore trending and recommended podcasts tailored to your interests.  
