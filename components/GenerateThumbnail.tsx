@@ -48,7 +48,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
       toast({ title: 'Error generating thumbnail', variant: 'destructive' })
     }
   }
-
+  // AI Generated Image
   const generateImage = async () => {
     try {
       const response = await handleGenerateThumbnail({ prompt: imagePrompt });
@@ -59,6 +59,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
       toast({ title: 'Error generating thumbnail', variant: 'destructive' })
     }
   }
+  // Upload Image
   const uploadImage = async (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 

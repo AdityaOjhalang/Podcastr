@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "qualified-flamingo-492.convex.cloud",
       },
+      {
+        protocol: 'https',
+        hostname: 'img.clerk.com'
+      },
     ],
   }, // <-- Closing brace for images was missing
 };

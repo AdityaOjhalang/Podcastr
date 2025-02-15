@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ConvexClerkProvider from "./providers/ConvexClerkProvider";
+import ConvexClerkProvider from "../providers/ConvexClerkProvider";
+import AudioProvider from "../providers/AudioProvider";
+import { Manrope } from "next/font/google";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,19 +24,22 @@ export const metadata: Metadata = {
   }
 };
 
+const manrope = Manrope({ subsets: ["latin"] });
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ConvexClerkProvider> {children}  </ConvexClerkProvider>
-
-      </body>
-    </html>
+    <ConvexClerkProvider>
+      <html lang="en">
+        <AudioProvider>
+          <body className={`${manrope.className}`}>
+            {children}
+          </body>
+        </AudioProvider>
+      </html>
+    </ConvexClerkProvider>
   );
 }
