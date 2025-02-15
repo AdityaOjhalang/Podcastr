@@ -72,13 +72,27 @@ const CreatePodcast = () => {
   async function onSubmit(data: z.infer<typeof formSchema>) {
     try {
       setIsSubmitting(true);
-      if (!audioUrl || !imageUrl || !voiceType) {
-        toast({
-            title: 'Please generate audio and image',
-        });
+      console.log("Audio URL:", audioUrl);
+      console.log("Image URL:", imageUrl);
+      console.log("Voice Type:", voiceType);
+
+      if (!audioUrl) {
+        console.log("Audio URL is missing");
         setIsSubmitting(false);
-        return;  // Return early to avoid executing further
-    }
+        return;
+      }
+
+      if (!imageUrl) {
+        console.log("Image URL is missing");
+        setIsSubmitting(false);
+        return;
+      }
+
+      if (!voiceType) {
+        console.log("Voice Type is missing");
+        setIsSubmitting(false);
+        return;
+      }
 
 
       const podcast = await createPodcast({
