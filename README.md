@@ -20,7 +20,7 @@ With real-time collaboration, AI-enhanced sound generation, and seamless distrib
 - ✅ Live preview for quick iterations.  
 
 ### ☁️ Cloud-Based & Secure  
-- ✅ No need to worry about storage; all data is stored **securely in the cloud**.  
+- ✅ No need to worry about storage; all data is stored **securely in the cloud provided by Convex**.  
 - ✅ **Multi-device support**—work on your podcast from anywhere.  
 
 
